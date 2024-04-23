@@ -1,5 +1,5 @@
 name: "Ollama"
-description: "Get up and running with large language models."
+description: "Get up and running with large language models"
 version: "0.1.32"
 slug: "ollama"
 arch:
@@ -20,3 +20,4 @@ ports:
 ports_description:
   11434/tcp: "Ollama API"
 startup: application
+watchdog: tcp://[HOST]:[PORT:11434]
