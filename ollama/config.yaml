@@ -1,0 +1,22 @@
+name: "Ollama"
+description: "Get up and running with large language models."
+version: "0.1.32"
+slug: "ollama"
+arch:
+  - aarch64
+  - amd64
+url: https://ollama.com
+environment:
+  OLLAMA_MODELS: "/config/ollama"
+map:
+  - config:rw
+image: docker.io/ollama/ollama
+init: false
+ingress: true
+ingress_port: 11434
+ingress_stream: true
+ports:
+  11434/tcp: 11434
+ports_description:
+  11434/tcp: "Ollama API"
+startup: application
