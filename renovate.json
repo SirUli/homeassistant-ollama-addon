@@ -1,5 +1,5 @@
 {
-    "extends": ["config:recommended", ":dependencyDashboard"],
+    "extends": ["config:recommended", ":dependencyDashboard", ":semanticCommitTypeAll(fix)"],
     "customManagers": [
     {
         "customType": "regex",
@@ -7,7 +7,7 @@
         "matchStrings": [
             "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sversion:\\s*\"(?<currentValue>.*)\"\\s"
         ],
-        "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+        "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
     }
     ]
 }
