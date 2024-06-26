@@ -17,7 +17,7 @@
             "@semantic-release/git",
             {
                 "assets": [
-                    "CHANGELOG.md"
+                    "ollama/CHANGELOG.md"
                 ],
                 "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
             }
