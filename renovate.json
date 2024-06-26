@@ -1,0 +1,13 @@
+{
+    "extends": ["config:recommended", ":dependencyDashboard"],
+    "customManagers": [
+    {
+        "customType": "regex",
+        "fileMatch": ["(^|/|.)config.yaml$"],
+        "matchStrings": [
+            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sversion:\\s*\"(?<currentValue>.*)\"\\s"
+        ],
+        "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    }
+    ]
+}
