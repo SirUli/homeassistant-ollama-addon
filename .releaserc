@@ -1,0 +1,33 @@
+{
+    "repositoryUrl": "https://code.roche.com/spot/ansible/roche.mono.git",
+    "tagFormat": "v${version}",
+    "branches": [
+        "main"
+    ],
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                "preset": "conventionalcommits"
+            }
+        ],
+        [
+            "@semantic-release/changelog",
+            {
+                "changelogFile": "ollama/CHANGELOG.md",
+                "changelogTitle": "# Changelog"
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "CHANGELOG.md"
+                ],
+                "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+            }
+        ],
+        "@semantic-release/github"
+    ]
+}
