@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.9](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.8...v1.1.9) (2024-07-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ollama/ollama to v0.2.7 ([debda99](https://github.com/SirUli/homeassistant-ollama-addon/commit/debda99ae04ed79fd386bf5600157e75b66b18d5))
+
 ## [1.1.8](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.7...v1.1.8) (2024-07-17)
 
 
