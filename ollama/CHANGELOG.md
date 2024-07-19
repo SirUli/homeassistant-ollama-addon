@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.10](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.9...v1.1.10) (2024-07-19)
+
+
+### Bug Fixes
+
+* introduce a 24 hour delay before automerge ([cd0364d](https://github.com/SirUli/homeassistant-ollama-addon/commit/cd0364d2a761eda75b4fa3b14d6cc62b1ad14d35))
+
 ## [1.1.9](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.8...v1.1.9) (2024-07-18)
 
 
