@@ -1,0 +1,42 @@
+---
+# exclude: .vscode|archetypes|config|layouts|meta|resources|scripting|static|tasks|themes
+default_language_version:
+  python: python3
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+        alias: eof
+        name: Add an empty line to the end
+        description: Fix eof to ensure a new line
+        types_or: [yaml, python, markdown]
+        stages: [commit]
+      - id: trailing-whitespace
+        alias: rm-ws
+        name: Trim Trailing Whitespace
+        description: Remove any trailing whitespaces
+        types_or: [yaml, python, markdown]
+        files: docs|playbooks|plugins|roles|tests
+        stages: [commit]
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+    - id: markdownlint
+      alias: md-lint
+      description: RUN markdownlint to check for formatting issues
+      files: content
+      types: [file, markdown]
+    - id: markdownlint-fix
+      alias: fix-md-lint
+      description: FIX markdownlint to check for formatting issues
+      files: content
+      types: [file, markdown]
+  - repo: local
+    hooks:
+      - id: commit-msg-check
+        name: Check Commit Message
+        entry: '\A(?!fix)(?!feat)(?!ci)(?!docs)(?!perf)(?!refactor)(?!build)(?!style)(?!test)'
+        args: [--multiline]
+        language: pygrep
+        stages: [commit-msg]
