@@ -1,0 +1,21 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommitTypeAll(fix)",
+    ":automergeAll",
+    ":enablePreCommit",
+  ],
+  customManagers: [
+    {
+      customType: "regex",
+      fileMatch: ["(^|/|.)config.yaml$"],
+      matchStrings: [
+        'datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sversion:\\s*"(?<currentValue>.*)"\\s',
+      ],
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+    },
+  ],
+  minimumReleaseAge: "24 hours",
+}
