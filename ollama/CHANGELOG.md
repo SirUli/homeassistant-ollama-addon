@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.14](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.13...v1.1.14) (2024-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ollama/ollama to v0.2.8 ([edb58bb](https://github.com/SirUli/homeassistant-ollama-addon/commit/edb58bb368a726cd240fe6d3999bf4c8c23eea6b))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v37.440.4 ([df847c1](https://github.com/SirUli/homeassistant-ollama-addon/commit/df847c158688313caaee48aba4d1c767b3c55c5d))
+
 ## [1.1.13](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.12...v1.1.13) (2024-07-23)
 
 
