@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.15](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.14...v1.1.15) (2024-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v38 ([1692aa0](https://github.com/SirUli/homeassistant-ollama-addon/commit/1692aa0ba953adfe464ca0d0c8d9b084bb74681f))
+
 ## [1.1.14](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.13...v1.1.14) (2024-07-23)
 
 
