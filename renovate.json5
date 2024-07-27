@@ -3,6 +3,7 @@
   extends: [
     "config:recommended",
     ":dependencyDashboard",
+    ":semanticCommits",
     ":semanticCommitTypeAll(fix)",
     ":automergeAll",
     ":enablePreCommit",
@@ -16,6 +17,15 @@
       ],
       versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
     },
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["pre-commit"],
+      "automerge": true,
+      "automergeType": "branch",
+      "semanticCommitType": "chore"
+
+    }
   ],
   minimumReleaseAge: "24 hours",
 }
