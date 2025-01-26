@@ -20,7 +20,7 @@ repos:
         files: docs|playbooks|plugins|roles|tests
         stages: [commit]
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.43.0
+    rev: v0.44.0
     hooks:
     - id: markdownlint
       alias: md-lint
