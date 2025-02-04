@@ -22,10 +22,10 @@
     {
       "matchManagers": ["pre-commit"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "semanticCommitType": "chore"
 
     }
   ],
-  minimumReleaseAge: "24 hours",
+  minimumReleaseAge: "12 hours",
 }

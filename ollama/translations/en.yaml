@@ -1,0 +1,22 @@
+configuration:
+  OLLAMA_MODELS:
+    name: OLLAMA_MODELS
+    description: Directory where the downloaded models are stored, ensure sufficient space
+  OLLAMA_KEEP_ALIVE:
+    name: OLLAMA_KEEP_ALIVE
+    description: Keep the model loaded in memory, set to -1 to keep it loaded
+  OLLAMA_KV_CACHE_TYPE:
+    name: OLLAMA_KV_CACHE_TYPE
+    description: The type of cache to use, q8_0 is recommended for most users. Only when FLASH_ATTENTION is enabled
+  OLLAMA_FLASH_ATTENTION:
+    name: OLLAMA_FLASH_ATTENTION
+    description: Enable flash attention for faster inference (only on GPU)
+  OLLAMA_MAX_LOADED_MODELS:
+    name: OLLAMA_MAX_LOADED_MODELS
+    description: The maximum number of models to keep loaded in memory
+  OLLAMA_NUM_PARALLEL:
+    name: OLLAMA_NUM_PARALLEL
+    description: The number of parallel requests to handle
+  OLLAMA_ORIGINS:
+    name: OLLAMA_ORIGINS
+    description: The allowed origins for the API, set to "*" to allow all. Clear to set to the default locations

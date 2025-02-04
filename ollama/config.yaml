@@ -1,5 +1,5 @@
 name: "Ollama"
-description: "Get up and running with large language models"
+description: "Get up and running with large language models."
 # renovate: datasource=github-tags depName=ollama/ollama
 version: "0.5.12"
 slug: "ollama"
@@ -7,20 +7,47 @@ arch:
   - aarch64
   - amd64
 url: https://ollama.com
-environment:
-  OLLAMA_MODELS: "/config/ollama"
-  # Keep model loaded in memory
-  OLLAMA_KEEP_ALIVE: "-1"
 map:
   - config:rw
+  - share:rw
 image: docker.io/ollama/ollama
 init: false
 ingress: true
+legacy: true
+video: true
 ingress_port: 11434
 ingress_stream: true
 ports:
   11434/tcp: 11434
 ports_description:
-  11434/tcp: "Ollama API"
+  11434/tcp: "The Ollama API Port, not used for End-User Access"
+options:
+  OLLAMA_MODELS: /share/ollama
+  OLLAMA_KEEP_ALIVE: -1
+  OLLAMA_KV_CACHE_TYPE: q8_0
+  OLLAMA_FLASH_ATTENTION: 0
+  OLLAMA_MAX_LOADED_MODELS: 1
+  OLLAMA_NUM_PARALLEL: 1
+  OLLAMA_ORIGINS: ""
+  gpus: all
+schema:
+  OLLAMA_FLASH_ATTENTION: int
+  OLLAMA_MODELS: list(/config/ollama|/share/ollama)
+  OLLAMA_KEEP_ALIVE: int
+  OLLAMA_KV_CACHE_TYPE: list(f16|q8_0|q4_0)
+  OLLAMA_MAX_LOADED_MODELS: int
+  OLLAMA_NUM_PARALLEL: int
+  OLLAMA_ORIGINS: str
+  gpus: str
+devices:
+  - /dev/dri/renderD128
+  - /dev/apex_0
+  - /dev/apex_1
+  - /dev/apex_2
+  - /dev/apex_3
+  - /dev/dri/card0
+  - /dev/vchiq
+  - /dev/video10
+  - /dev/video0
 startup: application
 watchdog: tcp://[HOST]:[PORT:11434]
