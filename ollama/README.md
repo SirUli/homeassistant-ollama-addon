@@ -1,8 +1,10 @@
 # Ollama Addon for Home Assistant
 
+Please note that this addon runs with CPU acceleration only. If you are interesting in getting GPU support, please check the [Website of the Ollama Container Image](https://hub.docker.com/r/ollama/ollama).
+
 ## Model Directory
 
-All downloaded models are stored `/config/ollama`. Please make sure that you have sufficient space available.
+All downloaded models are stored `/share/ollama` by default. For historic reasons you can also configure it for `/config/ollama`. Please make sure that you have sufficient space available.
 
 ## Ollama Integration
 
@@ -11,7 +13,3 @@ All downloaded models are stored `/config/ollama`. Please make sure that you hav
 To integrate with the default [Ollama](https://www.home-assistant.io/integrations/ollama/) integration use the following data:
 
 - URL: `http://76e18fb5-ollama:11434`
-
-## Note
-
-By default the container runs with CPU acceleration only. If you are interesting in getting GPU support, please check the [Website of the Ollama Container Image](https://hub.docker.com/r/ollama/ollama).

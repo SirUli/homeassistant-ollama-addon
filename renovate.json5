@@ -27,5 +27,5 @@
 
     }
   ],
-  minimumReleaseAge: "24 hours",
+  minimumReleaseAge: "12 hours",
 }
