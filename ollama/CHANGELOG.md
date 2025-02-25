@@ -1,5 +1,20 @@
 # Changelog
 
+# [2.0.0](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.50...v2.0.0) (2025-02-25)
+
+
+### Features
+
+* Overhaul the addon with new options ([c6c19f5](https://github.com/SirUli/homeassistant-ollama-addon/commit/c6c19f5d3f553b88b1e8e14f57d3a21e3cf2ea60))
+
+
+### BREAKING CHANGES
+
+* - The ollama directory was moved to /share to allow for exclusion from
+  backups. The previous directory under /config can still be configured.
+  If you want to continue using it, please make sure to configure the
+  settings of the addon accordingly.
+
 ## [1.1.50](https://github.com/SirUli/homeassistant-ollama-addon/compare/v1.1.49...v1.1.50) (2025-02-25)
 
 
