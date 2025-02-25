@@ -10,6 +10,7 @@ url: https://ollama.com
 map:
   - config:rw
   - share:rw
+  - data:rw
 image: docker.io/ollama/ollama
 init: false
 ingress: true
@@ -32,7 +33,7 @@ options:
   gpus: all
 schema:
   OLLAMA_FLASH_ATTENTION: int
-  OLLAMA_MODELS: list(/config/ollama|/share/ollama)
+  OLLAMA_MODELS: list(/share/ollama|/config/ollama|/data/ollama)
   OLLAMA_KEEP_ALIVE: int
   OLLAMA_KV_CACHE_TYPE: list(f16|q8_0|q4_0)
   OLLAMA_MAX_LOADED_MODELS: int

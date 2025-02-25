@@ -1,0 +1,5 @@
+configuration:
+  OLLAMA_BASE_URL:
+    name: OLLAMA_BASE_URL
+    description: Url path to access the API of ollama. Default is `http://76e18fb5-ollama:11434`
+    
