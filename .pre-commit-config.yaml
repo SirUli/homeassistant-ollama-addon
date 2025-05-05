@@ -33,7 +33,7 @@ repos:
       files: content
       types: [file, markdown]
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 40.0.6
+    rev: 40.3.1
     hooks:
       - id: renovate-config-validator
   - repo: local
