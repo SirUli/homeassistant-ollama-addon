@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.26](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.25...v2.0.26) (2025-08-12)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v5 ([b45d8a0](https://github.com/SirUli/homeassistant-ollama-addon/commit/b45d8a0e7065d5a87855e36171c3d3f4bb3952ba))
+
 ## [2.0.25](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.24...v2.0.25) (2025-08-06)
 
 
