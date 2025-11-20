@@ -1,0 +1,30 @@
+name: "Open WebUI"
+description: "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline."
+# renovate: datasource=github-tags depName=open-webui/open-webui
+version: "v0.6.36"
+slug: "open-webui"
+arch:
+  - aarch64
+  - amd64
+url: https://openwebui.com/
+map:
+  - type: share
+    read_only: False
+    path: /app/backend/data
+image: ghcr.io/open-webui/open-webui
+init: false
+legacy: true
+ingress: false
+ingress_port: 8080
+webui: "[PROTO:ssl]://[HOST]:[PORT:5678]"
+ingress_stream: true
+ports:
+  8080/tcp: 8080
+ports_description:
+  8080/tcp: "The Open WebUI Port for End-User Access"
+options:
+  OLLAMA_BASE_URL: http://76e18fb5-ollama:11434
+schema:
+  OLLAMA_BASE_URL: str
+startup: application
+watchdog: tcp://[HOST]:[PORT:8080]
