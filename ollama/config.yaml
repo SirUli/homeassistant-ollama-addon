@@ -8,8 +8,13 @@ arch:
   - amd64
 url: https://ollama.com
 map:
-  - config:rw
-  - share:rw
+  - type: config
+    read_only: false
+  - type: share
+    read_only: false
+  - type: addon_config
+    read_only: false
+    path: /root/.ollama
 image: docker.io/ollama/ollama
 init: false
 ingress: true
