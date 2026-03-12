@@ -1,10 +1,9 @@
-name: "Ollama"
-description: "Get up and running with large language models."
+name: "Ollama ROCm"
+description: "Get up and running with large language models on AMD graphic cards."
 # renovate: datasource=github-tags depName=ollama/ollama
-version: "0.17.7"
-slug: "ollama"
+version: "0.17.7-rocm"
+slug: "ollama-rocm"
 arch:
-  - aarch64
   - amd64
 url: https://ollama.com
 map:
@@ -15,7 +14,7 @@ map:
   - type: addon_config
     read_only: false
     path: /root/.ollama
-image: docker.io/ollama/ollama:0.17.7
+image: docker.io/ollama/ollama:0.17.7-rocm
 init: false
 ingress: true
 legacy: true
@@ -34,7 +33,7 @@ options:
   OLLAMA_MAX_LOADED_MODELS: 1
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
-  OLLAMA_API_KEY: ""
+  OLLAMA_VULKAN: 1
   gpus: all
 schema:
   OLLAMA_FLASH_ATTENTION: int
@@ -44,7 +43,11 @@ schema:
   OLLAMA_MAX_LOADED_MODELS: int
   OLLAMA_NUM_PARALLEL: int
   OLLAMA_ORIGINS: str
-  OLLAMA_API_KEY: str
+  OLLAMA_API_KEY: str?
+  HSA_OVERRIDE_GFX_VERSION: "str?"
+  OLLAMA_LLM_LIBRARY: "str?"
+  OLLAMA_CONTEXT_LENGTH: "int?"
+  OLLAMA_VULKAN: int
   gpus: str
 devices:
   - /dev/dri/renderD128
@@ -56,5 +59,7 @@ devices:
   - /dev/vchiq
   - /dev/video10
   - /dev/video0
+  - /dev/kfd
+  - /dev/dri
 startup: application
 watchdog: tcp://[HOST]:[PORT:11434]

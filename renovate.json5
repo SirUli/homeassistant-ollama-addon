@@ -17,15 +17,22 @@
       ],
       versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
     },
-  ],
-  "packageRules": [
     {
-      "matchManagers": ["pre-commit"],
-      "automerge": true,
-      "automergeType": "pr",
-      "semanticCommitType": "chore"
-
-    }
+      customType: "regex",
+      fileMatch: ["(^|/)config\\.yaml$"],
+      matchStrings: [
+        "image:\\s*[\"']?(?<depName>[^\\s:]+):(?<currentValue>[^\\s\"']+)[\"']?",
+      ],
+      datasourceTemplate: "docker",
+    },
+  ],
+  packageRules: [
+    {
+      matchManagers: ["pre-commit"],
+      automerge: true,
+      automergeType: "pr",
+      semanticCommitType: "chore",
+    },
   ],
   minimumReleaseAge: "12 hours",
 }

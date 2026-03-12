@@ -1,6 +1,6 @@
-# Ollama App for Home Assistant
+# Ollama ROCm App for Home Assistant
 
-Please note that this app runs with CPU acceleration or experimental Nvidia GPU Support (please report if it works for you!). For ROCm please choose the specific ROCm version.
+Please note that this app is the ROCm specific app. For the one with CPU acceleration or experimental Nvidia GPU Support please choose the version without the mentioning of "ROCm"
 
 ## Model Directory
 

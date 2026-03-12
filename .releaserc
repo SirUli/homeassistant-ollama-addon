@@ -1,27 +1,34 @@
 {
-    "tagFormat": "v${version}",
-    "branches": [
-        "main"
+  "tagFormat": "v${version}",
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "ollama/CHANGELOG.md",
+        "changelogTitle": "# Changelog"
+      }
     ],
-    "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
-        [
-            "@semantic-release/changelog",
-            {
-                "changelogFile": "ollama/CHANGELOG.md",
-                "changelogTitle": "# Changelog"
-            }
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "cp ollama/CHANGELOG.md ollama-rocm/CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "ollama/CHANGELOG.md",
+          "ollama-rocm/CHANGELOG.md"
         ],
-        [
-            "@semantic-release/git",
-            {
-                "assets": [
-                    "ollama/CHANGELOG.md"
-                ],
-                "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
-            }
-        ],
-        "@semantic-release/github"
-    ]
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ],
+    "@semantic-release/github"
+  ]
 }

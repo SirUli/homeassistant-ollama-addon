@@ -23,3 +23,15 @@ configuration:
   OLLAMA_API_KEY:
     name: OLLAMA_API_KEY
     description: API Key for Ollama Cloud
+  HSA_OVERRIDE_GFX_VERSION:
+    name: HSA_OVERRIDE_GFX_VERSION
+    description: Override rocm auto detection by specifying hw version - for example "11.0.0" for HX 370
+  OLLAMA_LLM_LIBRARY:
+    name: OLLAMA_LLM_LIBRARY
+    description: Force specific library for acceleration
+  OLLAMA_CONTEXT_LENGTH:
+    name: OLLAMA_CONTEXT_LENGTH
+    description: Override context length
+  OLLAMA_VULKAN:
+    name: OLLAMA_VULKAN
+    description: Use vulkan to accelerate llm inference. Set it to 1 to enable (default)
