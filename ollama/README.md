@@ -4,7 +4,7 @@ Please note that this addon runs with CPU acceleration or experimental Nvidia GP
 
 ## Model Directory
 
-All downloaded models are stored `/share/ollama` by default. For historic reasons you can also configure it for `/config/ollama`. Please make sure that you have sufficient space available.
+All downloaded models are stored `/share/ollama` by default. For historic reasons you can also configure it for `/config/ollama`. Please make sure that you have sufficient space available. You can choose `/data/ollama` to keep your backups small cause this path is excluded from the addon backup.
 
 ## Ollama Integration
 
