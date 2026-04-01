@@ -20,3 +20,6 @@ configuration:
   OLLAMA_ORIGINS:
     name: OLLAMA_ORIGINS
     description: The allowed origins for the API, set to "*" to allow all. Clear to set to the default locations
+  OLLAMA_VULKAN:
+    name: OLLAMA_VULKAN
+    description: Additional GPU Support. Read [the docs](https://docs.ollama.com/gpu#vulkan-gpu-support) for more information.

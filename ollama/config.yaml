@@ -31,13 +31,23 @@ options:
   OLLAMA_ORIGINS: ""
   gpus: all
 schema:
+  OLLAMA_CONTEXT_LENGTH: int?
   OLLAMA_FLASH_ATTENTION: int
   OLLAMA_MODELS: list(/config/ollama|/share/ollama|/data/ollama)
   OLLAMA_KEEP_ALIVE: int
   OLLAMA_KV_CACHE_TYPE: list(f16|q8_0|q4_0)
   OLLAMA_MAX_LOADED_MODELS: int
   OLLAMA_NUM_PARALLEL: int
+  OLLAMA_VULKAN: bool?
+  OLLAMA_NOPRUNE: bool?
+  OLLAMA_MAX_QUEUE: int?
+  OLLAMA_SCHED_SPREAD: bool?
+  OLLAMA_NO_LOG_STATS: bool?
+  OLLAMA_NO_HISTORY: bool?
+  OLLAMA_NO_CLOUD: bool?
+  OLLAMA_CONTEXT_LENGTH: int?
   OLLAMA_ORIGINS: str
+  HTTPS_PROXY: str?
   gpus: str
 backup_exclude:
   - "ollama/**"
