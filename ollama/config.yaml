@@ -38,7 +38,7 @@ schema:
   OLLAMA_KV_CACHE_TYPE: list(f16|q8_0|q4_0)
   OLLAMA_MAX_LOADED_MODELS: int
   OLLAMA_NUM_PARALLEL: int
-  OLLAMA_NUM_THREADS: int?
+  OLLAMA_NUM_THREAD: int?
   OLLAMA_VULKAN: bool?
   # https://github.com/ollama/ollama/issues/13108
   GGML_VK_DISABLE_INTEGER_DOT_PRODUCT: bool?
