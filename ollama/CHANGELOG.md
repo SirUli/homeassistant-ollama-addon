@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.82](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.81...v2.0.82) (2026-04-06)
+
+
+### Bug Fixes
+
+* **ollama:** Add GGML_VK_DISABLE_INTEGER_DOT_PRODUCT ([82d02c1](https://github.com/SirUli/homeassistant-ollama-addon/commit/82d02c1a19c60e341fcae051e203ede330532e7c)), closes [#159](https://github.com/SirUli/homeassistant-ollama-addon/issues/159)
+
 ## [2.0.81](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.80...v2.0.81) (2026-04-06)
 
 
