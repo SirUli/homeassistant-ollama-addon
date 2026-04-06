@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.81](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.80...v2.0.81) (2026-04-06)
+
+
+### Bug Fixes
+
+* **ollama:** Add optional OLLAMA_NUM_THREADS ([00812ad](https://github.com/SirUli/homeassistant-ollama-addon/commit/00812adfaddb8ebc70e1aa657a5a4e0bb6d8c387)), closes [#269](https://github.com/SirUli/homeassistant-ollama-addon/issues/269)
+
 ## [2.0.80](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.79...v2.0.80) (2026-04-04)
 
 
