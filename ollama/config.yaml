@@ -40,6 +40,8 @@ schema:
   OLLAMA_NUM_PARALLEL: int
   OLLAMA_NUM_THREADS: int?
   OLLAMA_VULKAN: bool?
+  # https://github.com/ollama/ollama/issues/13108
+  GGML_VK_DISABLE_INTEGER_DOT_PRODUCT: bool?
   OLLAMA_NOPRUNE: bool?
   OLLAMA_MAX_QUEUE: int?
   OLLAMA_SCHED_SPREAD: bool?
