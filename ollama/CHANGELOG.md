@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.83](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.82...v2.0.83) (2026-04-06)
+
+
+### Bug Fixes
+
+* **ollama:** Fix environment variable OLLAMA_NUM_THREAD ([ae8b040](https://github.com/SirUli/homeassistant-ollama-addon/commit/ae8b040f12b2f8f53ecaa74536442201c17bd10e))
+
 ## [2.0.82](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.81...v2.0.82) (2026-04-06)
 
 
