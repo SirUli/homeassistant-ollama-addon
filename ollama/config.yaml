@@ -1,7 +1,7 @@
 name: "Ollama"
 description: "Get up and running with large language models."
 # renovate: datasource=github-tags depName=ollama/ollama
-version: "0.20.4"
+version: "0.20.6"
 slug: "ollama"
 arch:
   - aarch64
