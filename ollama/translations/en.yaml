@@ -23,3 +23,6 @@ configuration:
   OLLAMA_VULKAN:
     name: OLLAMA_VULKAN
     description: Additional GPU Support. Read [the docs](https://docs.ollama.com/gpu#vulkan-gpu-support) for more information.
+  HOME:
+    name: HOME
+    description: Home directory for the Ollama process. Set to /share (default) so that Ollama Cloud credentials (stored in ~/.ollama) persist across addon restarts.
