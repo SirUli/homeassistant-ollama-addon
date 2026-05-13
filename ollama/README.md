@@ -18,6 +18,18 @@ Use the following data:
 
 If you want to change the model, delete the integration (not the addon!) and restart the process for the configuration of the integration.
 
+## Ollama Cloud Models
+
+Ollama supports cloud-hosted models that run on Ollama's infrastructure, useful for large models that don't fit on a local GPU. To use cloud models, run the following inside the addon container and follow the sign-in URL:
+
+```bash
+ollama run gpt-oss:120b-cloud
+```
+
+Cloud credentials are stored in `~/.ollama/` and persisted to `/share/.ollama/` across addon restarts (via the `HOME` option).
+
+Read more at the [Ollama Cloud documentation](https://docs.ollama.com/cloud).
+
 ## Note on the UI Link
 
 The UI Link is only there to check if the API of ollama is available. There is no chat functionality included in the official image of ollama.
