@@ -29,6 +29,7 @@ options:
   OLLAMA_MAX_LOADED_MODELS: 1
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
+  HOME: /share
   gpus: all
 schema:
   OLLAMA_CONTEXT_LENGTH: int?
@@ -51,6 +52,7 @@ schema:
   OLLAMA_CONTEXT_LENGTH: int?
   OLLAMA_ORIGINS: str
   HTTPS_PROXY: str?
+  HOME: str
   gpus: str
 backup_exclude:
   - "ollama/**"
