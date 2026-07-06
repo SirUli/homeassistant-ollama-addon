@@ -61,6 +61,7 @@ devices:
   - /dev/apex_2
   - /dev/apex_3
   - /dev/dri/card0
+  - /dev/kfd
   - /dev/vchiq
   - /dev/video10
   - /dev/video0
