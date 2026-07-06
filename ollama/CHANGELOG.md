@@ -1,5 +1,12 @@
 # Changelog
 
+# [2.2.0](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.1.0...v2.2.0) (2026-07-06)
+
+
+### Features
+
+* Authentication via API Keys and move home ([00f2ecb](https://github.com/SirUli/homeassistant-ollama-addon/commit/00f2ecb629d82c13848bc7405aa344d9205d75dd))
+
 # [2.1.0](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.112...v2.1.0) (2026-07-06)
 
 
