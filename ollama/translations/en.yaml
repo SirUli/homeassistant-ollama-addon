@@ -1,4 +1,7 @@
 configuration:
+  OLLAMA_API_KEY:
+    name: OLLAMA_API_KEY
+    description: API key for authenticating with Ollama Cloud (ollama.com) to use cloud-hosted models. Create a key at https://ollama.com/settings/keys.
   OLLAMA_MODELS:
     name: OLLAMA_MODELS
     description: Directory where the downloaded models are stored, ensure sufficient space
