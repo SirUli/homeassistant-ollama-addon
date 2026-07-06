@@ -1,5 +1,12 @@
 # Changelog
 
+# [2.1.0](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.112...v2.1.0) (2026-07-06)
+
+
+### Features
+
+* persist Ollama Cloud credentials across addon restarts ([0d11836](https://github.com/SirUli/homeassistant-ollama-addon/commit/0d118363af1d7922923f6b76c80a2c8e5036382b)), closes [#197](https://github.com/SirUli/homeassistant-ollama-addon/issues/197) [#219](https://github.com/SirUli/homeassistant-ollama-addon/issues/219)
+
 ## [2.0.112](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.111...v2.0.112) (2026-07-06)
 
 
