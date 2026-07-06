@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.112](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.111...v2.0.112) (2026-07-06)
+
+
+### Bug Fixes
+
+* Add /dev/kfd to list of devices for rocm ([088ac33](https://github.com/SirUli/homeassistant-ollama-addon/commit/088ac33ae18e2736e51ca207bbeae73efa0f86e6))
+
 ## [2.0.111](https://github.com/SirUli/homeassistant-ollama-addon/compare/v2.0.110...v2.0.111) (2026-06-30)
 
 
