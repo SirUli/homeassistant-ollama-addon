@@ -29,9 +29,10 @@ options:
   OLLAMA_MAX_LOADED_MODELS: 1
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
-  HOME: /share
+  HOME: /data
   gpus: all
 schema:
+  OLLAMA_API_KEY: str?
   OLLAMA_CONTEXT_LENGTH: int?
   OLLAMA_FLASH_ATTENTION: int
   OLLAMA_MODELS: list(/config/ollama|/share/ollama|/data/ollama)
