@@ -26,6 +26,9 @@ configuration:
   OLLAMA_VULKAN:
     name: OLLAMA_VULKAN
     description: Additional GPU Support. Read [the docs](https://docs.ollama.com/gpu#vulkan-gpu-support) for more information.
+  OLLAMA_IGPU_ENABLE:
+    name: OLLAMA_IGPU_ENABLE
+    description: Enable use of integrated GPUs (e.g. Intel Iris Xe). Requires OLLAMA_VULKAN to be enabled. Disabled by default to preserve current behaviour.
   HOME:
     name: HOME
     description: Home directory for the Ollama process. Set to /share (default) so that Ollama Cloud credentials (stored in ~/.ollama) persist across addon restarts.
